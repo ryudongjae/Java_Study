@@ -1,6 +1,6 @@
 package objectoriented;
 
-public class Method {
+public class Method01 {
     public int sum(int a,int b){
         return a+b;
     }
@@ -9,7 +9,7 @@ public class Method {
         int a = 2;
         int b = 43;
 
-        Method myTest = new Method();
+        Method01 myTest = new Method01();
         int c =myTest.sum(a,b);
 
         System.out.println(c);
