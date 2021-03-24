@@ -1,5 +1,5 @@
 package polymorphism;
 
-public interface BarkablePredator extends Barkable,Predator {
+public interface BarkablePredator extends Barkable {
 
 }

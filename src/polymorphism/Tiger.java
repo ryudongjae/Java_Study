@@ -1,9 +1,8 @@
 package polymorphism;
 
 import inteerface.Animal;
-import inteerface.Predator;
 
-public class Tiger extends Animal implements BarkablePredator {
+public class Tiger extends Predator implements BarkablePredator {
     public String getFood(){
         return "apple";
     }
