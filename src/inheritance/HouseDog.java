@@ -18,6 +18,7 @@ public class HouseDog extends Dog{
     }
 
     public void sleep(int hour){
+
         System.out.println(this.name + " zzz in house " + hour+"hours");
     }
 
