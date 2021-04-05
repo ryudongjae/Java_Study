@@ -1,4 +1,4 @@
-package challenge;
+package gameLevel;
 
 public class MainBoardPlay {
     public static void main(String[] args) {

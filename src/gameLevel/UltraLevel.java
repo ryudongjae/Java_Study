@@ -1,4 +1,4 @@
-package challenge;
+package gameLevel;
 
 public class UltraLevel extends PlayerLevel{
     @Override
