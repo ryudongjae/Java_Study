@@ -2,7 +2,11 @@ package example.staticEx;
 
 public class CompanyNumber {
 
-    public static int serialNum =1000;
+    public static int getSerialNum() {
+        return serialNum;
+    }
+
+    private static int serialNum =1000;
 
     private int CompanyId;
     private String CompanyName;
