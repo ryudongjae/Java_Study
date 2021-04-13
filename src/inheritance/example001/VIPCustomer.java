@@ -4,7 +4,7 @@ public class VIPCustomer extends Customer{
         private int agentID;
         double salesRatio;
 
-        public VIPCustomer(int customerID,String customerName){
+        public VIPCustomer(int customerID,String customerName,int agentID){
             //super은 상위클래스의 기본 생성자를 호출함
             super(customerID,customerName);
 
@@ -19,6 +19,7 @@ public class VIPCustomer extends Customer{
         }
 
         public int getAgentID(){
+
             return agentID;
         }
 
