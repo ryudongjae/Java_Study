@@ -1,4 +1,4 @@
-package inteerface;
+package interfaceEx.animalInterface;
 
 public class Animal {
     String name;

@@ -1,7 +1,5 @@
 package polymorphism;
 
-import inteerface.Animal;
-
 public class Lion extends Predator implements BarkablePredator {
 
     public String getFood() {

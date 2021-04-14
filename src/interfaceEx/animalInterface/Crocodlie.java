@@ -1,4 +1,4 @@
-package inteerface;
+package interfaceEx.animalInterface;
 
 public class Crocodlie extends Animal implements Predator{
 
