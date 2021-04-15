@@ -20,3 +20,5 @@ Byte Code 는 기계어가 아니기 때문에OS에서 바로 실행되지 않�
  Class Loader를 통해 JVM 내의 Runtime Data Areas 에 배치된 바이트 코드는 Executin Engine에 의해 실행되며, 실행 엔진은 자바 바이트 코드를 명령어 단위로 읽어서 실행합니다.
  최초 JVM 이 나왔을 당시에는 Interperter방식(한 줄씩 해석하고 실행)이였기 때문에 속도가 느리다는 단점이 있었지만 JIT complier 방식을 통해 이 점을 보완했습니다.
  JIT는 ByteCode를 어셈블러 같은 NativeCode로 바꿔서 실행이 빠르지만 역시 변환하는데 비용이 발생합니다. 이 같은 이유 때문에 JVM은 모든 코드를 JIT Compiler 방식으로 실행하지 않고 Interpreter 방식을 사용하다 일정한 기준이 넘어가면 JIT Compiler 방식으로 실행합니다.
+
+
