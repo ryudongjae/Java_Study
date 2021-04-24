@@ -12,3 +12,15 @@ Generic(제네릭)의 장점
 <K>	Key
 <V>	Value
 <N>	Number
+
+
+<? extends T> : 상한 경계
+1. <? extends T>
+이 것은 T 타입의 자식(자손) 타입만 가능하다는 의미다.
+
+<? super T> : 하한 경계
+2. <? super T>
+이 것은 T 타입의 부모(조상) 타입만 가능하다는 의미다.
+
+<?> : 와일드 카드(Wild card)
+이 와일드 카드 <?> 은 <? extends Object> 와 마찬가지라고 했다. Object는 자바에서의 모든 API 및 사용자 클래스의 최상위 타입이다.
