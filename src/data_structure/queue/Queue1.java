@@ -60,13 +60,6 @@ package data_structure.queue;
             } else {
                 // 큐에서 삭제할 데이터 반환
                 System.out.println("Deleted Item : " + queueArr[front+1]);
-
-                // front 포인터는 삭제할 위치에 있는 상태이므로 다음과 같이 (front + 1) % size 로 설정.
-                // front + 1 로 설정하면 front 포인터가 마지막 요소에 위치했을 경우,
-                // ArrayOutOfBoundException이 발생하기 때문에 (front + 1) % size 로 설정해줌.
-                // ex) 큐의 size가 5일 때 (index 범위는 0 ~ 4)
-                // index of front 3: (3 + 1) % 5 = 4
-                // index of front 4: (4 + 1) % 5 = 0
                 front = (front + 1) % this.queueSize;
 
                 return queueArr[front];

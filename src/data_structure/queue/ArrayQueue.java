@@ -123,6 +123,13 @@ public class ArrayQueue<E> implements Queueinterface<E>{
 
     @Override
     public E peek() {
-        return null;
+
+        //요소가 없을 경우 null 반환
+        if (size == 0){
+            return null;
+        }
+        @SuppressWarnings("unchecked")
+        E e =(E) array[(front +1)% array.length];
+        return e;
     }
 }
