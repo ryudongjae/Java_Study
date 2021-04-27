@@ -18,7 +18,7 @@ public class MyStack implements Stack{
     public MyStack(int stackSize){
         top = -1; //스택 포인터 초기화
         this.stackSize = stackSize;  //스택사이즈 설정
-        stackArr = new char[this.stackSize];  //스택 배열 생
+        stackArr = new char[this.stackSize];  //스택 배열 생성
     }
 
     //스택이 비어 있는지 확인
@@ -38,7 +38,7 @@ public class MyStack implements Stack{
             System.out.println("stack is full");
         }else{
             stackArr[++top] = item;  //다음 스택 포인터가 가리키는 인덱스에 데이터 추가
-            System.out.println("Inserted item"+ item);
+            System.out.println("Inserted item : "+ item);
         }
     }
     //스택의 최상위(마지막) 데이터 추출 후 삭제
@@ -47,7 +47,7 @@ public class MyStack implements Stack{
             System.out.println("Deleting fail! Stack is empty");
             return 0;
         }else{
-            System.out.println("Deleted item"+ stackArr[top]);
+            System.out.println("Deleted item : "+ stackArr[top]);
             return stackArr[top--];
         }
     }
@@ -74,11 +74,11 @@ public class MyStack implements Stack{
     //스택에 저장된 모든 데이터 출력
     public void printStack(){
         if(isEmpty()){
-            System.out.println("Stack is Empty");
+            System.out.print("Stack is Empty");
         }else{
-            System.out.println("Stack is element : ");
+            System.out.print("Stack is element : ");
             for(int i=0; i<=top; i++){
-                System.out.println(stackArr[i]+" ");
+                System.out.print(stackArr[i]+" ");
             }
             System.out.println();
         }
@@ -86,5 +86,28 @@ public class MyStack implements Stack{
 
     public static void main(String[] args) {
 
+            int stackSize = 5;
+            MyStack arrStack = new MyStack(stackSize);
+
+            arrStack.push('A');
+            arrStack.printStack();
+
+            arrStack.push('B');
+            arrStack.printStack();
+
+            arrStack.push('C');
+            arrStack.printStack();
+
+            arrStack.pop();
+            arrStack.printStack();
+
+            arrStack.pop();
+            arrStack.printStack();
+
+            arrStack.peek();
+            arrStack.printStack();
+
+            arrStack.clear();
+            arrStack.printStack();
+        }
     }
-}
