@@ -18,8 +18,8 @@ public class HashTable {
     private int getHash(String key) {
         int hash = 0;
         for (int i = 0; i < key.length(); i++) {
-            char val = key.charAt(i);
-            hash = (hash + val*(i + 1)) % HASH_TABLE_CAPACITY;
+            char val = key.charAt(i); //String으로 저장된 문자열 중에서 한 글자만 선택해서 char타입으로 변환해주는 녀석이다.
+            hash = (hash + val * (i + 1)) % HASH_TABLE_CAPACITY;
         }
         return hash;
     }
@@ -78,4 +78,31 @@ public class HashTable {
         }
         return out;
     }
+
+
+    public static void main(String[] args) {
+        HashTable hashTable = new HashTable();
+
+        hashTable.put("Tokyo", "Japan");
+        hashTable.put("Seoul", "Korea");
+        hashTable.put("Beijing", "China");
+        hashTable.put("Paris", "France");
+        hashTable.put("Washington", "USA");
+        hashTable.put("Brazilia", "Brazil");
+        System.out.println("Size: " + hashTable.size());
+
+        System.out.println((String) hashTable.get("Tokyo"));
+        System.out.println((String) hashTable.get("Seoul"));
+        System.out.println((String) hashTable.get("Beijing"));
+        System.out.println((String) hashTable.get("Paris"));
+        System.out.println((String) hashTable.get("Washington"));
+        System.out.println((String) hashTable.get("Brazilia"));
+
+        hashTable.remove("Brazilia");
+        System.out.println("Size: " + hashTable.size());
+        System.out.println((String) hashTable.get("Brazilia"));
+        System.out.println(hashTable.toString());
+
+    }
+
 }
