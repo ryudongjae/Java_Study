@@ -50,7 +50,7 @@ public class BinarySearchTree02 {
             }
         }
     }
-
+    //삭제
     public boolean removeNode(int element) {
         Node remove = root;
         Node parentRemove = null;
@@ -143,6 +143,9 @@ public class BinarySearchTree02 {
         return true;
     }
 
+    /**
+     * 중위 순회
+     */
     public void inorderTree(Node root, int depth) {
         if (root != null) {
             inorderTree(root.left, depth + 1);
