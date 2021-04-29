@@ -1,5 +1,5 @@
 package data_structure.tree;
-public class BinarySearchTree {
+public class binarySearchTree01 {
 
     public class Node {
 
@@ -48,7 +48,7 @@ public class BinarySearchTree {
         public boolean find(int key){
             Node currentNode = root;
             while(currentNode != null){
-                //현재 노드와 같으면
+                //현재 노드와 찾는값이 같으면
                 if(currentNode.getData() == key){
                     return true;
                 }else if(currentNode.getData() > key){  //찾는 값이 노드보다 작으면
@@ -154,7 +154,7 @@ public class BinarySearchTree {
 
     public Node root; // bst의 루트 노드
 
-    public BinarySearchTree(){ // bst 생성자
+    public binarySearchTree01(){ // bst 생성자
         root = null;
     }
 
