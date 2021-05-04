@@ -24,7 +24,7 @@ public class HashTable {
         return hash;
     }
 
-    public Object get(String key) {
+    public Object get(String key){
         if (key != null) {
             int hash = getHash(key);
             while (data[hash] != null && !data[hash].key.equals(key)) {
