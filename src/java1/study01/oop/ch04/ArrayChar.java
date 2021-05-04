@@ -1,6 +1,6 @@
 package java1.study01.oop.ch04;
 
-public class ArrrayChar {
+public class ArrayChar {
     public static void main(String[] args) {
         char [] alpahbets = new char[26];
         char ch = 'a';
