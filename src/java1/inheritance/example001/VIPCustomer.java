@@ -6,6 +6,7 @@ public class VIPCustomer extends Customer{
 
         public VIPCustomer(int customerID,String customerName,int agentID){
             //super은 상위클래스의 기본 생성자를 호출함
+
             super(customerID,customerName);
 
             customerGrade = "VIP";

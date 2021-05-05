@@ -21,6 +21,9 @@ public class CustomerTest {
 
         System.out.println(customerKim.showCustomerInfo());
         System.out.println(customerLee.showCustomerInfo());
+        System.out.println(customerLee.showCustomerInfo());
+
+
 
     }
 }

@@ -7,7 +7,7 @@ public class Customer {
     int bonusPoint;
     double bonusRatio;
 
-	/*public Customer() {
+	/**public Customer() {
 		customerGrade = "SILVER";
 		bonusRatio = 0.01;
 
