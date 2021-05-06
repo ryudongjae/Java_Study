@@ -20,10 +20,12 @@ class Animal1{
 class Human extends Animal1{
 
     public void move() {
+
         System.out.println("사람이 두발로 걷습니다.");
     }
 
     public void readBooks() {
+
         System.out.println("사람이 책을 읽습니다.");
     }
 }
@@ -31,10 +33,12 @@ class Human extends Animal1{
 class Tiger1 extends Animal1{
 
     public void move() {
+
         System.out.println("호랑이가 네 발로 뜁니다.");
     }
 
-    public void hunting() {
+    public void hunting()
+    {
         System.out.println("호랑이가 사냥을 합니다.");
     }
 }
@@ -54,17 +58,18 @@ class Eagle extends Animal1{
 //여러 클래스를 하나의 타입(상위 클래스)으로 핸들링 할 수 있음
 
 public class AnimalTest {
+    //instanceof =  원래 인스턴스의 형이 맞는지 여부를 체크하는 키워드 맞으면 true 아니면 false를 반환한다.
 
     public static void main(String[] args) {
 
         Animal1 hAnimal = new Human();
         Animal1 tAnimal = new Tiger1();
         Animal1 eAnimal = new Eagle();
-
-        AnimalTest test = new AnimalTest();
-        test.moveAnimal(hAnimal);
-        test.moveAnimal(tAnimal);
-        test.moveAnimal(eAnimal);
+//
+//        AnimalTest test = new AnimalTest();
+//        test.moveAnimal(hAnimal);
+//        test.moveAnimal(tAnimal);
+//        test.moveAnimal(eAnimal);
 
         ArrayList<Animal1> animalList = new ArrayList<Animal1>();
         animalList.add(hAnimal);
@@ -74,11 +79,29 @@ public class AnimalTest {
         for(Animal1 animal : animalList) {
             animal.move();
         }
+
+        AnimalTest animalTest = new AnimalTest();
+        animalTest.DownCastingTest(animalList);
     }
 
     public void moveAnimal(Animal1 animal) {
         animal.move();
 
+    }
+    public void DownCastingTest(ArrayList<Animal1> list){
+            for (int i = 0; i< list.size(); i++){
+                Animal1 animal = list.get(i);
+                if ( animal instanceof Human){
+                    Human human = (Human)animal;
+                    human.readBooks();
+                }else if (animal instanceof Tiger1){
+                    Tiger1 tiger1 = (Tiger1) animal;
+                    tiger1.hunting();
+                }else if(animal instanceof Eagle){
+                    Eagle eagle = (Eagle) animal;
+                    eagle.flying();
+                }
+            }
     }
 }
 
