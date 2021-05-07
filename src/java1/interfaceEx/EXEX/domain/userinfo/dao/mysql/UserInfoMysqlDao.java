@@ -1,4 +1,7 @@
-package java1.interfaceEx.polymorphismInterface;
+package java1.interfaceEx.EXEX.domain.userinfo.dao.mysql;
+
+import java1.interfaceEx.EXEX.domain.userinfo.UserInfo;
+import java1.interfaceEx.EXEX.domain.userinfo.dao.UserInfoDao;
 
 public class UserInfoMysqlDao implements UserInfoDao {
     @Override

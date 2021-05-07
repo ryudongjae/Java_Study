@@ -1,4 +1,4 @@
-package java1.interfaceEx.polymorphismInterface;
+package java1.interfaceEx.EXEX.domain.userinfo;
 
 public class UserInfo {
 

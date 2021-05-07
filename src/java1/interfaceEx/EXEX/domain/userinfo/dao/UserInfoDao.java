@@ -1,4 +1,6 @@
-package java1.interfaceEx.polymorphismInterface;
+package java1.interfaceEx.EXEX.domain.userinfo.dao;
+
+import java1.interfaceEx.EXEX.domain.userinfo.UserInfo;
 
 public interface UserInfoDao {
 

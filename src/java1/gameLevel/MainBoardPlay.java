@@ -3,7 +3,6 @@ package java1.gameLevel;
 public class MainBoardPlay {
     public static void main(String[] args) {
 
-        BeginnerLevel bLevel = new BeginnerLevel();
         Player player = new Player();
         player.play(1);
 

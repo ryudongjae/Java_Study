@@ -1,10 +1,16 @@
-package java1.interfaceEx.polymorphismInterface;
+package java1.interfaceEx.EXEX.web.userinfo;
+
+import java1.interfaceEx.EXEX.domain.userinfo.UserInfo;
+import java1.interfaceEx.EXEX.domain.userinfo.dao.UserInfoDao;
+import java1.interfaceEx.EXEX.domain.userinfo.dao.mysql.UserInfoMysqlDao;
+import java1.interfaceEx.EXEX.domain.userinfo.dao.oracle.UserInfoOracleDao;
 
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.Properties;
 
 public class UserInfoClient {
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws IOException{
         //FileInputStream 는 InputStream 를 상속받았으며, 파일로 부터 바이트로 입력받아, 바이트 단위로 출력할 수 있는 클래스이다.
         FileInputStream fis = new FileInputStream("db.properties");
 
@@ -16,8 +22,8 @@ public class UserInfoClient {
         String dbType = prop.getProperty("DBTYPE");
 
         UserInfo userInfo = new UserInfo();
-        userInfo.setUserId("ryu");
-        userInfo.setPassword("asdsad");
+        userInfo.setUserId("1014");
+        userInfo.setPassword("1234");
         userInfo.setUserName("ryu");
 
         UserInfoDao userInfoDao = null;
@@ -25,7 +31,7 @@ public class UserInfoClient {
         if(dbType.equals("ORACLE")){
             userInfoDao = new UserInfoOracleDao();
         }
-        else if(dbType.endsWith("MYSQL")){
+        else if(dbType.equals("MYSQL")){
             userInfoDao = new UserInfoMysqlDao();
         }
         else{
