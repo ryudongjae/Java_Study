@@ -23,6 +23,7 @@ public class Calculator implements Calc{
         return num1/num2;
     }
 
+
     public void show(){
         System.out.println("finish!!");
     }
