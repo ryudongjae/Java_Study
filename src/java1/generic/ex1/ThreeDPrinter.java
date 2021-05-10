@@ -1,6 +1,6 @@
 package java1.generic.ex1;
 
-public class ThreeDPrinter<T> {
+public class ThreeDPrinter<T extends Material> {
     private T material; //T 자료형으로 선언한 변수
 
     public void setMaterial(T material) {
@@ -13,5 +13,9 @@ public class ThreeDPrinter<T> {
 
     public String toString(){
         return material.toString();
+    }
+
+    public void printing(){
+        material.doPrinting();
     }
 }
