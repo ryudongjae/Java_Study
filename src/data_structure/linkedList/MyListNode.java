@@ -23,6 +23,7 @@ public class MyListNode  {
         return data;
     }
 }
+
 class MyLinkedList {
     private MyListNode head;
     int count;
@@ -118,6 +119,7 @@ class MyLinkedList {
         }
         return  tempNode.getData();
     }
+
     public MyListNode getNode(int position){
         int i;
         MyListNode tempNode = head;
@@ -132,8 +134,8 @@ class MyLinkedList {
             tempNode = tempNode.next;
         }
         return tempNode;
-
     }
+
     public void removeAll(){
         head = null;
         count = 0;
@@ -181,4 +183,3 @@ class MyLinkedList {
         list.printAll();
     }
 }
-
