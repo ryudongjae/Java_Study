@@ -26,7 +26,7 @@ public class MemberHashSet {
                 return true;
             }
         }
-        System.out.println(memberId + "가 존ㄴ재하지 않습니다.");
+        System.out.println(memberId + "가 존재하지 않습니다.");
         return false;
     }
 
