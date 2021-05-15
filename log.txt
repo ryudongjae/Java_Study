@@ -1,0 +1,18 @@
+5월 15, 2021 10:54:57 오전 java1.Exception.errorLog.Log log
+FINEST: test
+5월 15, 2021 10:54:57 오전 java1.Exception.errorLog.Log log
+FINER: test
+5월 15, 2021 10:54:57 오전 java1.Exception.errorLog.Log log
+FINE: test
+5월 15, 2021 10:54:57 오전 java1.Exception.errorLog.Log log
+CONFIG: test
+5월 15, 2021 10:54:57 오전 java1.Exception.errorLog.Log log
+INFO: test
+5월 15, 2021 10:54:57 오전 java1.Exception.errorLog.Log log
+WARNING: test
+5월 15, 2021 10:54:57 오전 java1.Exception.errorLog.Log log
+SEVERE: test
+5월 15, 2021 11:10:01 오전 java1.Exception.errorLog.Log warning
+WARNING: name must not be null
+5월 15, 2021 11:10:01 오전 java1.Exception.errorLog.Log warning
+WARNING: 이름이 너무 깁니다.
