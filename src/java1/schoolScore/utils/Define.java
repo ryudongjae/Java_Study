@@ -1,4 +1,4 @@
-package java1.schoolScore;
+package java1.schoolScore.utils;
 
 public class Define {
     public static final int ComputerScience = 1001;  //컴퓨터과학

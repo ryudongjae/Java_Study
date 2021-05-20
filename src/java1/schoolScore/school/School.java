@@ -1,8 +1,8 @@
-package java1.schoolScore;
+package java1.schoolScore.school;
 
 import java.util.ArrayList;
 
-public class School {
+public class  School {
     private static School instance = new School();
 
     private static String SCHOOL_NAME ="A School";

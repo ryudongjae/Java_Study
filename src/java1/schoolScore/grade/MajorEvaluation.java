@@ -1,4 +1,4 @@
-package java1.schoolScore;
+package java1.schoolScore.grade;
 
 public class MajorEvaluation implements GradeEvaluation{
     @Override

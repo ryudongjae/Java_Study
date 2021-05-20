@@ -1,4 +1,6 @@
-package java1.schoolScore;
+package java1.schoolScore.school;
+
+import java1.schoolScore.utils.Define;
 
 import java.util.ArrayList;
 
@@ -39,7 +41,7 @@ public class Subject {
         studentList.add(student);
     }
 
-    public Subject(String subjectName, int subjectId, int gradeType) {
+    public Subject(String subjectName, int subjectId) {
         this.subjectName = subjectName;
         this.subjectId = subjectId;
         this.gradeType = Define.AB_TYPE;
